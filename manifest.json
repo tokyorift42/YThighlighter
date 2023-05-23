@@ -1,0 +1,16 @@
+{
+  "name": "YouTube Highlighter",
+  "version": "1.0",
+  "description": "Highlight Message Author Names",
+  "host_permissions": ["https://*.youtube.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "run_at": "document_end",
+      "all_frames": true,
+      "js": ["script.js"]
+    }
+  ],
+  "manifest_version": 3,
+  "permissions": ["tabs"]
+}
